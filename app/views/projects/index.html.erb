@@ -1,25 +1,114 @@
-<h1>Projects</h1>
-<h2 class="text-center">Ruby on Rails</h2>
-<div class="d-flex justify-content-between my-3">
-  <a href="https://github.com/mpike91" style="text-decoration: none; color: inherit;" target="_blank">
-    <div class="card" style="width: 18rem;">
-      <%= image_tag('githubcard.png', alt: "Linked In", class: "card-img-top") %>
-      <div class="card-body bg-light">
-        <h5 class="card-title">GitHub</h5>
-        <p class="card-text">My GitHub homepage. Access all of my GitHub repositories and projects to date.</p>
-      </div>
-    </div>
-  </a>
+<h1 class="text-center">Projects</h1>
 
-  <div class="card" style="width: 18rem;">
-    <a href="#" target="_blank">
-      <img class="card-img-top" src="..." alt="Card image cap">
-    </a>
-    <div class="card-body">
-      <h5 class="card-title">Ruby </h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+<%# RUBY ON RAILS %>
+<h2 class="text-center my-3 fs-3">Ruby on Rails</h2>
+<div class="d-flex justify-content-center gap-5 mb-5 text-center">
+  <div class="card" style="width: 20rem">
+    <%= image_tag('ruby-portfolio.png', alt: "Portfolio", class: "card-img-top") %>
+    <div class="card-body bg-light ">
+      <h5 class="card-title">Portfolio</h5>
+      <p class="card-text">Simple portfolio page. Includes basic routing.</p>
+      <%= link_to "GitHub", "https://github.com/mpike91/ruby-portfolio", class: "btn btn-dark", target: "_blank" %>
     </div>
   </div>
-
+  <div class="card" style="width: 20rem">
+    <%= image_tag('ruby-foodlog.png', alt: "Foodlog", class: "card-img-top") %>
+    <div class="card-body bg-light ">
+      <h5 class="card-title">Foodlog</h5>
+      <p class="card-text">Food log app in with basic routing, models, and querying.</p>
+      <%= link_to "GitHub", "https://github.com/mpike91/ruby-foodlog", class: "btn btn-dark", target: "_blank" %>
+    </div>
+  </div>
 </div>
+
+<%# NODE %>
+<h2 class="text-center my-3 fs-3">Node</h2>
+<div class="d-flex justify-content-center gap-5 mb-5 text-center">
+  <div class="card" style="width: 20rem">
+    <%= image_tag('node-natours.png', alt: "Natours", class: "card-img-top") %>
+    <div class="card-body bg-light ">
+      <h5 class="card-title">Natours</h5>
+      <p class="card-text">"Natours" app with user creation, sign-in, bookings, geo-location maps, and more.</p>
+      <%= link_to "GitHub", "https://github.com/mpike91/Node-Natours", class: "btn btn-dark", target: "_blank" %>
+      <%= link_to "Deployed", "https://natours-mpike91.onrender.com/", class: "btn btn-dark", target: "_blank" %>
+    </div>
+  </div>
+</div>
+
+<%# REACT %>
+<h2 class="text-center my-3 fs-3">React</h2>
+<div class="d-flex justify-content-center gap-5 mb-5 text-center">
+  <div class="card" style="width: 20rem">
+    <%= image_tag('react-travel-list.png', alt: "Travel List", class: "card-img-top") %>
+    <div class="card-body bg-light ">
+      <h5 class="card-title">Travel List</h5>
+      <p class="card-text">Travel packing list app. User can add items of custom quantity, delete individual items, check "packed", sort items, and clear entire list.</p>
+      <%= link_to "GitHub", "https://github.com/mpike91/react-travel-list", class: "btn btn-dark", target: "_blank" %>
+      <%= link_to "Deployed", "https://mpike91.github.io/react-travel-list/", class: "btn btn-dark", target: "_blank" %>
+    </div>
+  </div>
+  <div class="card" style="width: 20rem">
+    <%= image_tag('react-eatnsplit.png', alt: "Eat'n Split", class: "card-img-top") %>
+    <div class="card-body bg-light ">
+      <h5 class="card-title">Eat'n Split</h5>
+      <p class="card-text">Allows user to enter a restaurant bill, enter your expense of the bill, mark who paid for the bill, and then split the bill. A list of friends keeps track of how much is owed between you and each friend. A form allows you to add friends to the list.</p>
+      <%= link_to "GitHub", "https://github.com/mpike91/react-eat-n-split", class: "btn btn-dark", target: "_blank" %>
+    </div>
+  </div>
+  <div class="card" style="width: 20rem">
+    <%= image_tag('react-pizza-menu.png', alt: "Pizza Menu", class: "card-img-top") %>
+    <div class="card-body bg-light ">
+      <h5 class="card-title">Pizza Menu</h5>
+      <p class="card-text">Simple React app displaying a pizza menu.</p>
+      <%= link_to "GitHub", "https://github.com/mpike91/react-pizza-menu", class: "btn btn-dark", target: "_blank" %>
+    </div>
+  </div>
+</div>
+
+<%# JAVASCRIPT %>
+<h2 class="text-center my-3 fs-3">JavaScript</h2>
+<div class="d-flex justify-content-center gap-5 mb-5 text-center">
+  <div class="card" style="width: 20rem">
+    <%= image_tag('js-meme.png', alt: "Meme Generator", class: "card-img-top") %>
+    <div class="card-body bg-light ">
+      <h5 class="card-title">Meme Generator</h5>
+      <p class="card-text">Fun app where users can type an image address, top text, and bottom text and it will generate a meme. Uses local storage to "save" created memes. Can delete memes.</p>
+      <%= link_to "GitHub", "https://github.com/mpike91/Meme-Generator", class: "btn btn-dark", target: "_blank" %>
+      <%= link_to "Deployed", "https://mpike91.github.io/Meme-Generator/", class: "btn btn-dark", target: "_blank" %>
+    </div>
+  </div>
+  <div class="card" style="width: 20rem">
+    <%= image_tag('js-giphy-party.png', alt: "Giphy Party", class: "card-img-top") %>
+    <div class="card-body bg-light ">
+      <h5 class="card-title">Giphy Party</h5>
+      <p class="card-text">Search for gifs. Uses Giphy API to generate gifs. Picks a random GIF from the search results. Can remote images.</p>
+      <%= link_to "GitHub", "https://github.com/mpike91/Giphy-Party", class: "btn btn-dark", target: "_blank" %>
+      <%= link_to "Deployed", "https://mpike91.github.io/Giphy-Party/", class: "btn btn-dark", target: "_blank" %>
+    </div>
+  </div>
+  <div class="card" style="width: 20rem">
+    <%= image_tag('js-tv-maze.png', alt: "TV Maze", class: "card-img-top") %>
+    <div class="card-body bg-light ">
+      <h5 class="card-title">TV Maze</h5>
+      <p class="card-text">Search for TV Shows using a TV API. Generates a list of TV Shows results. User can click "Episodes" to list the show's episodes.</p>
+      <%= link_to "GitHub", "https://github.com/mpike91/TV-Maze", class: "btn btn-dark", target: "_blank" %>
+      <%= link_to "Deployed", "https://mpike91.github.io/TV-Maze/", class: "btn btn-dark", target: "_blank" %>
+    </div>
+  </div>
+</div>
+
+<%# GITHUB %>
+<h2 class="text-center my-3 fs-3">GitHub</h2>
+<div class="d-flex justify-content-center gap-5 mb-5 text-center">
+  <div class="card" style="width: 20rem">
+    <%= image_tag('githubcard.png', alt: "Linked In", class: "card-img-top") %>
+    <div class="card-body bg-light ">
+      <p class="card-text">My GitHub homepage. Access all of my GitHub repositories.</p>
+      <%= link_to "GitHub", "https://github.com/mpike91", class: "btn btn-dark", target: "_blank" %>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
